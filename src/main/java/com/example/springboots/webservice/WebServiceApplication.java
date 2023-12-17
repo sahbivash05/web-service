@@ -11,7 +11,7 @@ import org.springframework.web.servlet.i18n.SessionLocaleResolver;
 import java.util.Locale;
 
 @SpringBootApplication
-public class WebServiceApplication {
+public class  WebServiceApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(WebServiceApplication.class, args);
@@ -22,10 +22,4 @@ public class WebServiceApplication {
 		sessionLocaleResolver.setDefaultLocale(Locale.US);
 		return sessionLocaleResolver;
 	}
-//	@Bean
-//	public ResourceBundleMessageSource messageSource(){
-//		ResourceBundleMessageSource resourceBundleMessageSource = new ResourceBundleMessageSource();
-//		resourceBundleMessageSource.setBasename("messages");
-//		return resourceBundleMessageSource;
-//	}
 }
